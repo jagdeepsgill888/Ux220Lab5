@@ -22,3 +22,12 @@ class YearElement extends HTMLElement{
 }
 
 customElements.define("x-fullyyear", YearElement);
+
+class BackgroundElement extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `<div style="background-color:lightblue">${this.innerHTML}</div>
+        `;
+    }
+}
+
+customElements.define("x-background", BackgroundElement);
